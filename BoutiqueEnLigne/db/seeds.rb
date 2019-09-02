@@ -14,9 +14,10 @@ require 'xkcd'
  items = []
 
 #title, description, price, image_url
- 20.time do
- 	items << Item.create!(title:Faker::Creature::Cat.breed, description:Faker::Dessert.flavor, price:Faker::Number.decimal(l_digits: 2))
- 	for Item.title.each do
- 		items << Item.create!(image_url:title XKCD.search)
+ 20.times do
+ 	items << Item.create!(title: Faker::Creature::Cat.breed, description: Faker::Dessert.flavor, price: Faker::Number.decimal(l_digits: 2))
+ 	#for Item.title.each do
+ 	#	items << Item.create!(image_url:title XKCD.search)
+ 	#end
  end
  
