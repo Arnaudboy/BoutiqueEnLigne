@@ -8,6 +8,7 @@
 	<br/>
 
 	<p class="text-banner">Bienvenue au royaume des chats<br/></p>
+
 </div>
 
 <div class="space">
@@ -18,7 +19,6 @@
 <!-- cards à définir ??? Tu sauras mieux que moi faire quelque chose de joli Melwyn..!!!-->
 <div class="cards"> 
 
-
 	<div class="flex-container">
 		<% @items.each do |item| %>
 		<% @title = item.title %>
@@ -26,5 +26,7 @@
 		<% @image_url = item.image_url %>
 		<% @id = item.id %>
 	</div>
+
 <%= render "layouts/footer"%>
+
 </div>
