@@ -1,23 +1,43 @@
-<h1>Hello World</h1>
 
-<%@items.each do |item|%>
-	<div class="" id="card">
-		<div class="" id="image-container">
-		</div>
-		<div class="" id="cottom-container">
-			<div class= "" id="text-container">
-			<p> <%= item.title %> </p></br>
+<body>
+    <!-- Jumbotron Header -->
+    <header class="jumbotron jumbotron-fluid ">
+	<div class="container">
+      <h1 class="d-flex justify-content-center">We sell cat pictures!</h1>
+	  <div class="d-flex justify-content-center">
+      <%= link_to 'Sign up', new_user_registration_path, class: "btn btn-primary", 'data-toggle' => "modal", 'data-target' => "#modalSignup" %>
+	  </div>
+    </div>
+	</header>
+	
+
+    <!-- Page Features -->
+
+	<div class="container">
+	<% @items.each do |item| %>
+	<div class="row text-center">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src=" https://placekitten.com/500/325" alt="one god damn hot cat">
+          <div class="card-body">
+            <h4 class="card-title"><%= item.title %></h4>
+            <p class="card-text"><%= item.description %></p>
+          </div>
+		  <div>
+			<p class="card-text"><%= item.price %></p>
+		  </div>
+          <div>
+		  	<div id="add-to-cart">
+				add to cart
 			</div>
-			<div class="">
-			<p> <%= item.title %> </p></br>
-			<div id="buttons-container">
-				<div id="add-to-cart">
-					add to cart
-				</div>
-				<div id="show-item-page">
-					show item
-				</div>
+			<div id="show-item-page">
+				show item
 			</div>
-		</div>
-	</div>
-<%end%>
+          </div>
+        </div>
+      </div>
+	  </div>
+
+	<%end%>
+	</body>

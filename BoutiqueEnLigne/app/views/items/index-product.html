@@ -1,32 +1,23 @@
 <%= render 'layouts/navbar' %>
 
 <div class="banner">
+  <div class="">
+    <h1 class="title-banner">Chat Alors!</h1>
+  </div>
+  <br />
 
-	<div class="">
-		<h1 class="title-banner">Chat Alors!</h1>
-	</div>
-	<br/>
-
-	<p class="text-banner">Bienvenue au royaume des chats<br/></p>
-
+  <p class="text-banner">Bienvenue au royaume des chats<br /></p>
 </div>
 
-<div class="space">
-</div> <br/><br/><br/><br/>
-
-
+<div class="space"></div>
+<br /><br /><br /><br />
 
 <!-- cards à définir ??? Tu sauras mieux que moi faire quelque chose de joli Melwyn..!!!-->
-<div class="cards"> 
+<div class="cards">
+  <div class="flex-container">
+    <% @items.each do |item| %> <% @title = item.title %> <% @price = item.price
+    %> <% @image_url = item.image_url %> <% @id = item.id %>
+  </div>
 
-	<div class="flex-container">
-		<% @items.each do |item| %>
-		<% @title = item.title %>
-		<% @price = item.price %>
-		<% @image_url = item.image_url %>
-		<% @id = item.id %>
-	</div>
-
-<%= render "layouts/footer"%>
-
+  <%= render "layouts/footer"%>
 </div>

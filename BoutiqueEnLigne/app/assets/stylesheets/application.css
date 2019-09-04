@@ -30,6 +30,8 @@
 
 /* 
 *personal css ====================================================================
+
+
 */
 
 @media (min-width: 992px) {
@@ -79,14 +81,13 @@
   /* Other styles for the page not related to the animated dropdown */
   
   body {
-    background: #007bff;
-    background: linear-gradient(to bottom, #F6F0F0, #FFF);
+    background: #FFFF);
 }
 
 /* 
 *personal css ====================================================================
 */
-
+@import url('https://fonts.googleapis.com/css?family=Akronim&display=swap');
 
 :root {
     --blue: #4582EC;
@@ -5508,7 +5509,13 @@
   
   @media (min-width: 576px) {
     .jumbotron {
+        background-image: url(https://images.pexels.com/photos/62321/kitten-cat-fluffy-cat-cute-62321.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260/);
+        background-repeat: no-repeat;
+        background-position: left top;
+        padding-top:10rem;
+        margin-bottom:50px;
       padding: 4rem 2rem;
+      height: 30rem;
     }
   }
   
@@ -10854,4 +10861,127 @@
   .list-group {
     font-size: 0.930125rem;
   }
+
+  /* ================================================= devise CSS ========================================== */
+
+.form-box{
+    background-color: #F6F0F0;
+    color: #655656;
+    border-radius: 4rem;
+    padding: 3rem;
+    margin: 4rem;
+    width: 40rem;
+}
   
+input[type=email]{
+    width: 100%;
+    border-radius: 0.5rem;
+    border-style: none;
+    padding-left: 1rem;
+    height: 3rem;
+}
+
+input[type=password]{
+    width: 100%;
+    border-radius: 0.5rem;
+    border-style: none;
+    padding-left: 1rem;
+    height: 3rem;
+}
+
+
+::placeholder {
+	color:#f79b9b;
+}
+
+
+input:focus, textarea {
+  outline: none !important;
+  color:#f79b9b;
+}
+  
+input[type=submit]{
+    min-width: 9rem;
+    border-radius: 999em;
+    border-style: none;
+    height: 3rem;
+    background: #F1C7C7;
+    color: #655656;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+a:link {
+    color: #655656;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+a:visited {
+    color: #999999;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+a:hover {
+    color: #f79b9b;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #f79b9b 50%, rgb(248, 239, 238) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+.Banner{
+    font-family: 'Akronim', cursive;
+    color: #F6F0F0;
+}
