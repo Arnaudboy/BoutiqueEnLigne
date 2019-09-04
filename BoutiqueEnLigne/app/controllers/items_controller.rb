@@ -4,6 +4,11 @@ class ItemsController < ApplicationController
 
 		@items = Item.all
 
+		if current_user.cart == nil
+			@cart = Cart.create!
+			current_user.update(cart: @cart)
+		end
+
 	end
 	
 	def show

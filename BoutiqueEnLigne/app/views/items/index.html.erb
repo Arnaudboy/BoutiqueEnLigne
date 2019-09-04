@@ -26,10 +26,6 @@
     	<%= link_to "Créer un panier", "/carts", method: :post %>
     </li>
 
-    <li>
-    	<%= link_to "Passer commande", orders_path %>
-    </li>
-
   <% else %>
     <li>    
       <%= link_to "Sign in", new_user_session_path %>
