@@ -10,6 +10,102 @@
   </head>
 
   <body>
+    <header>
+<!-------------------------------Navbar--------------------------------->
+ 
+<nav class="navbar navbar-expand-lg navbar-light" style="background: #DE9B9B">
+  <div class="container">
+    <a class="Banner" href="#" Style="color: #F6F0F0"><h3>Chat Alors!</h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+          <a class="nav-link" href="#" role="button">
+          Login</a>
+          <a class="nav-link" href="#" role="button">
+          Signup</a>
+          <a class="nav-link" href="#" role="button">
+          Panier</a>
+          </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <!--
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-inner fixed-top">
+        <a class="navbar-brand" href="/"><img id="logo" src="./../../assets/images/Banner.svg">Banner
+        </a>
+        ajouter unn logo 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav ml-auto">
+            <% if user_signed_in? %>
+              <li class="nav-item">
+                <%= link_to "Cart", user_your_cart_index_path, class: "nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "Profile", user_your_cart_index_path(current_user), class: "nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "Log out", destroy_user_session_path, :class => "nav-link", :method => :delete %>
+              </li>   
+            <% else %>
+              <li class="nav-item">
+                <%= link_to 'Sign up', new_user_registration_path, class: "nav-link", 'data-toggle' => "modal", 'data-target' => "#modalSignup" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Log in', new_user_session_path, class: "nav-link", 'data-toggle' => "modal", 'data-target' => "#modalLogin" %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </nav> -->
+    </header>
     <%= yield %>
-  </body>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>Chat<span>alors!</span></h3>
+        <p class="footer-links">
+        <a href="https://github.com/BeeJasmine/">Jasmine</a> 
+        <a href="https://github.com/Arnaudboy">Arnaud</a>
+        <a href="https://github.com/MelvynSwingler">Melvyn</a>
+        <a href="">Flora</a>
+        <a href="">Vanessa</a>
+        <a href="">Lorry</a>
+		    </p>
+        <p class="footer-company-name">We love kittens</p>
+        <br>
+      </div>
+
+	    <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p>Nice</p>
+        </div>
+		    <div>
+			    <i class="fa fa-phone"></i>
+			    <p>+33 6 88 02 66 43</p>
+	    	</div>
+	    	<div>
+			    <i class="fa fa-envelope"></i>
+			    <p><a href="mailto:">miaou@welovecats.com</a></p>
+		    </div>
+	    </div>
+	    <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+        </p>
+		    <div class="footer-icons">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+          <a href=""><i class="fab fa-github"></i></a>
+		    </div>
+	    </div>
+    </footer>
 </html>
