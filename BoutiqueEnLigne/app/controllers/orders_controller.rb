@@ -1,6 +1,11 @@
 class OrdersController < ApplicationController
   def index
-  	@order = Item.find(Cart.find(current_user.cart[:id]).id)
+  	@cart = Cart.find(current_user.cart[:id])
+  	@order = Item.find(@cart.item_id)
+  	puts "#"*60
+  	puts @cart.item_id
+  	puts "#"*60
+  	
   end
 
   def create

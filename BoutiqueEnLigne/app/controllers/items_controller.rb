@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
 
 		@items = Item.all
 
-		if current_user.cart == nil
+		if user_signed_in? && current_user.cart == nil
 			@cart = Cart.create!
 			current_user.update(cart: @cart)
 		end
