@@ -38,6 +38,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
 gem 'faker'
 gem 'xkcd'
+gem 'mailjet'
 #Front end gem
 gem "font-awesome-rails"
 gem 'bootstrap', '~> 4.1.3'
