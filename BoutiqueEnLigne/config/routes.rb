@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'orders/show'
   devise_for :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :carts
   resources :items
-  root "devise/registrations#new"
+  resources :orders
+  root "items#index"
 end

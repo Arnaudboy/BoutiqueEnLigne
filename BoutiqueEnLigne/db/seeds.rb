@@ -10,6 +10,8 @@ require 'faker'
 require 'xkcd'
 
  Item.destroy_all
+ User.destroy_all
+ Cart.destroy_all
 
  items = []
 
@@ -21,3 +23,5 @@ require 'xkcd'
  	#end
  end
  
+
+
