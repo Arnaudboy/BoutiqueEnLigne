@@ -2,11 +2,11 @@
 	<body>
 
 <div class="container">
+	<div class="d-flex flex-wrap">
 	<% @items.each do |item| %>
-	<div class="">
-    	<div class="col-lg-3 col-md-6 mb-4 text-center">
+    	<div class="cart-card col-lg-3 col-md-6 mb-4 text-center">
 			<div class="card h-100" style="width: 100%;">
-			<img class="card-img-top" src=" https://placekitten.com/500/325" alt="one god damn hot cat">
+			<div class="my-image-container"></div>
 			<div class="card-body">
 				<h4 class="card-title"><%= item.title %></h4>
 				<p class="card-text"><%= item.description %></p>
@@ -24,8 +24,8 @@
 				</div>
 			</div>
     	</div>
+	<%end%>
 	</div>
-<%end%>
 </div>
 	
 
