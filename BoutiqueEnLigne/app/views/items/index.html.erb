@@ -2,33 +2,29 @@
 
 
     <!-- Page Features -->
-
 <div class="container">
-    <div class="">
 	<% @items.each do |item| %>
-	<div class="row text-center">
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100" style="width: 100%;">
-          <img class="card-img-top" src=" https://placekitten.com/500/325" alt="one god damn hot cat">
-          <div class="card-body">
-            <h4 class="card-title"><%= item.title %></h4>
-            <p class="card-text"><%= item.description %></p>
-          </div>
-		  <div>
-			<p class="card-text"><%= item.price %></p>
-		  </div>
-          <div>
-		  	<div id="add-to-cart">
-				add to cart
+	<div class="d-flex flex-wrap">
+    	<div class="col-lg-3 col-md-6 mb-4 text-center">
+			<div class="card h-100" style="width: 100%;">
+			<img class="card-img-top" src=" https://placekitten.com/500/325" alt="one god damn hot cat">
+			<div class="card-body">
+				<h4 class="card-title"><%= item.title %></h4>
+				<p class="card-text"><%= item.description %></p>
 			</div>
-			<div id="show-item-page">
-				show item
+			<div id="">
+				<p class="card-text"><%= item.price %></p>
+				</div>
+					<div id="buttons">
+					<div id="add-to-cart">
+						<%= link_to "Cart", class: "nav-link" %>
+					</div>
+					<div id="show-item-page">
+						<%= link_to "Show item", class: "nav-link" %>
+					</div>
+				</div>
 			</div>
-          </div>
-        </div>
-      </div>
-	  </div>
-	  </div>
-
+    	</div>
 	<%end%>
+</div>
+	
