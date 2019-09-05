@@ -5,8 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-<<<<<<< HEAD
-=======
+
 
 require 'faker'
 require 'xkcd'
@@ -23,4 +22,3 @@ require 'xkcd'
  	#end
  end
  
->>>>>>> 4e134e03585def9c9a7a019bca198716ce40a1be

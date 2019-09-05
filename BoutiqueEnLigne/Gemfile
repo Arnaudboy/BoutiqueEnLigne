@@ -40,6 +40,7 @@ gem 'faker'
 gem 'xkcd'
 gem 'mailjet'
 gem 'dotenv'
+gem "letter_opener"
 #Front end gem
 gem "font-awesome-rails"
 gem 'bootstrap', '~> 4.1.3'
