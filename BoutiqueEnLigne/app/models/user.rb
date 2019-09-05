@@ -6,5 +6,4 @@ class User < ApplicationRecord
 
   belongs_to :cart, optional: true
   has_many :orders
-  
 end

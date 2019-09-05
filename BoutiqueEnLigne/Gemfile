@@ -34,6 +34,13 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Reduces boot times through caching; required in config/boot.rb
+
+gem 'bootsnap', '>= 1.1.0', require: false
+gem 'devise'
+gem 'faker'
+gem 'xkcd'
+gem 'mailjet'
+gem 'dotenv'
 #Front end gem
 gem "font-awesome-rails"
 gem "nokogiri", ">= 1.10.4"
@@ -61,6 +68,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem'devise'
-gem 'faker'
-gem 'xkcd'
