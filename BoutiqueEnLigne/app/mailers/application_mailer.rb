@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
+  config.default_from = 'Chat.Po.Pete@gmail.com'
   layout 'mailer'
 end
