@@ -660,7 +660,7 @@
   
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px;
+      max-width: 1540px;
     }
   }
   
@@ -4426,9 +4426,9 @@
   }
   
   .nav-tabs .nav-link {
-    border: 1px solid transparent;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+        color: #FFFF;
+        border-color: #FFFF;
+        border-radius: 9999rem;
   }
   
   .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
@@ -11128,3 +11128,13 @@ html {
     margin-right: 3px;
     margin-bottom: 5px;
   }
+
+.nav-button.a{
+    color: #F6F0F0 !important;
+    border-color: #F6F0F0 !important;
+    border-radius: 9999em !important;
+}
+
+footer{
+    vertical-align: bottom;
+}
