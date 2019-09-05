@@ -10911,7 +10911,7 @@ input[type=submit]{
 }
 
 a:link {
-    color: #655656;
+    color: #f1f1f1;
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -11048,7 +11048,7 @@ html {
     width: 35%;
   }
   
-  /*.footer-distributed .footer-center i{
+  .footer-distributed .footer-center i{
     background-color:  #F6F0F0;
     color: #C4C4C4;
     font-size: 25px;
@@ -11059,7 +11059,7 @@ html {
     line-height: 42px;
     margin: 10px 15px;
     vertical-align: middle;
-  }*/
+  }
   
   .footer-distributed .footer-center i.fa-envelope{
     font-size: 17px;

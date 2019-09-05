@@ -10,13 +10,6 @@ class ItemsController < ApplicationController
 		end
 
 	end
-<<<<<<< HEAD
-
-	def create
-
-	end
-
-=======
 	
 	def show
 
@@ -51,6 +44,5 @@ class ItemsController < ApplicationController
 
 	include ApplicationHelper
 
->>>>>>> Delivery_BDD
 end
 
